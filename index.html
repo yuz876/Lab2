@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Yujie's Journal Entries.">
         <meta name="keywords" content="CSE110, Lab2, HTML">
         <meta name="author" content="Yujie Zhang">
         <link rel="icon" type="image/jpg" href="img/dog.jpg">
+
+        <title>Yujie's Journal Entries</title>
+
+
         <style>
             body {
                 background-color: rgb(247, 203, 203);
@@ -56,9 +60,11 @@
                 height: 300px;
             }
         </style>
+
+
     </head>
     <body>
-        <title>Yujie's Journal Entries</title>
+        
 
         <header style="text-align: center;">
         <h1>Yujie's Journal Entries</h1>
@@ -66,7 +72,7 @@
         <hr>
 
         <div class="topnav">
-            <a class="active">Home</img></a>
+            <a class="active">Home</a>
             <a href="#0409">04/09</a>
             <a href="#0408">04/08</a>
             <a href="#0407">04/07</a>
@@ -78,14 +84,14 @@
         <p>Today is a good day. I have finished tons of stuff:</p>
         <ol>
             <li style="font-style: italic"><input type="checkbox" checked> Got up early. </input></li>
-            <li style="font-style: italic"><input type="checkbox" checked> Finished my quiz.</li>
-            <li style="font-style: italic"><input type="checkbox" checked> Finished Lab2.</li>
+            <li style="font-style: italic"><input type="checkbox" checked> Finished my quiz.</input></li>
+            <li style="font-style: italic"><input type="checkbox" checked> Finished Lab2.</input></li>
         </ol>
         <p>To do list for tomorrow:</p>
         <ul>
             <li style="font-style: italic"><input type="checkbox" > Got up early. </input></li>
-            <li style="font-style: italic"><input type="checkbox" > Listen to the class.</li>
-            <li style="font-style: italic"><input type="checkbox" > Finished HW.</li>
+            <li style="font-style: italic"><input type="checkbox" > Listen to the class.</input></li>
+            <li style="font-style: italic"><input type="checkbox" > Finished HW.</input></li>
         </ul>
         </section>
         <br>
@@ -100,7 +106,7 @@
             </div>
                 
             <div class="right">
-                <image height=180px src="img/dog.jpg"></image>
+                <img height="180px" src="img/dog.jpg" alt="A dog."></img>
                 <p>Click here to hear my dog say hello with you!</p>
                 <audio controls>
                     <source src="media/bark.mp3" type="audio/mpeg">
@@ -123,7 +129,7 @@
                 <p>Stars: Yifei Liu, Donnie Yen, Gong Li </p>
             </div>
             <div class="right">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KK8FHdFluOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KK8FHdFluOQ" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <br>
@@ -169,7 +175,7 @@
                     </datalist>
 
                     <label for="mood">Are you happy?</label>
-                    <select name="mind" id="mind">
+                    <select name="mood" id="mood">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                     <option value="Justsoso">Just so so</option>
@@ -177,7 +183,8 @@
 
 
                     <br>
-                    <input type="textarea" id="tet" value="Write your journay here..."><br>
+                    <textarea id="journay" name="journay" rows="4" cols="50">Write your journay here...</textarea>
+             
                     
                     
                 </fieldset>
